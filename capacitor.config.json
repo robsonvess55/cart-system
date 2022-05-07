@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "cart-system",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
