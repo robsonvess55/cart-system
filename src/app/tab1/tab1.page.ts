@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,20 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  products: any;
+  constructor(private productService: ProductService) { }
 
+  ngOnInit() {
+    this.getMenu();
+  }
+
+  getMenu() {
+    this.productService.getMenu().subscribe(
+      (res) => {
+        this.products = res;
+      },
+      (err) => {
+        alert(err)
+      })
+  }
 }
