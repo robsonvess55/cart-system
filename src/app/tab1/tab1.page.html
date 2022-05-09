@@ -9,21 +9,21 @@
 <ion-content [fullscreen]="true">
   <ng-template ngFor [ngForOf]="products" let-product>
     <ion-card class="product-on-menu" [id]="product.id">
-      <ion-modal class="product-sellector" [trigger]="product.id">
+      <!-- <ion-modal class="product-sellector" [trigger]="product.id">
         <ng-template>
           <ion-card>
             <ion-card-header>
-              <ion-card-title class="product-tittle">{{product.name}}</ion-card-title>
+              <ion-card-title class="product-tittle">{{ product.name }}</ion-card-title>
             </ion-card-header>
             <ion-button (click)="dismissModal(product.id)" expand="block" fill="clear" shape="round">
               Fechar
             </ion-button>
           </ion-card>
         </ng-template>
-      </ion-modal>
+      </ion-modal> -->
       <ion-card-header>
         <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
-        <ion-card-title class="product-tittle">{{product.name}}</ion-card-title>
+        <ion-card-title class="product-tittle">{{ product.name }}</ion-card-title>
       </ion-card-header>
       <ion-card-content>
         R$ {{ product.price }}
@@ -31,11 +31,4 @@
     </ion-card>
 
   </ng-template>
-  <!-- <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header> -->
-
-  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>
