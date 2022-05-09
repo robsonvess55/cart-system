@@ -9,20 +9,18 @@
 <ion-content [fullscreen]="true">
   <ng-template ngFor [ngForOf]="products" let-product>
     <ion-card class="product-on-menu" [id]="product.id">
-      <ion-modal [trigger]="product.id">
+      <ion-modal class="product-sellector" [trigger]="product.id">
         <ng-template>
           <ion-card>
             <ion-card-header>
               <ion-card-title class="product-tittle">{{product.name}}</ion-card-title>
-              
             </ion-card-header>
-            <ion-card-content>
-              <!-- R$ {{ product.price }} -->
-            </ion-card-content>
+            <ion-button (click)="dismissModal(product.id)" expand="block" fill="clear" shape="round">
+              Fechar
+            </ion-button>
           </ion-card>
         </ng-template>
       </ion-modal>
-
       <ion-card-header>
         <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
         <ion-card-title class="product-tittle">{{product.name}}</ion-card-title>

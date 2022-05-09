@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { Components } from '@ionic/core';
 import { ProductService } from '../services/product.service';
 
 @Component({
@@ -7,9 +9,10 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-
   products: any;
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService, public modalCtrl: ModalController) { }
+  
+  // @Input() modal: Components.IonModal
 
   ngOnInit() {
     this.getMenu();
@@ -23,5 +26,9 @@ export class Tab1Page {
       (err) => {
         alert(err)
       })
+  }
+
+  dismissModal(modalId: number) {
+    this.modalCtrl.dismiss(modalId)
   }
 }
