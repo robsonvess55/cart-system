@@ -16,7 +16,7 @@ import { ActionSheetModule } from '../utils/action-sheet/action-sheet.module';
     FormsModule,
     ExploreContainerComponentModule,
     Tab2PageRoutingModule,
-    ActionSheetModule
+    ActionSheetModule,
   ],
   declarations: [Tab2Page]
 })
