@@ -1,8 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { Components } from '@ionic/core';
 import { ProductService } from '../services/product.service';
-import { ActionSheetController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',

@@ -1,4 +1,4 @@
-<div>
+<div class="product-row">
   <ion-card class="product-list-item">
     <ion-card-header>
       <ion-card-title class="product-tittle">{{ product.name }}</ion-card-title>
@@ -6,5 +6,7 @@
     <ion-card-content>
       R$ {{ product.price }}
     </ion-card-content>
+    <!-- <ion-button color="primary" class="sellect-product-button">Primary</ion-button> -->
   </ion-card>
+  <a routerLink="/registration"><button class="btn btn-success" > Submit </button></a>
 </div>
