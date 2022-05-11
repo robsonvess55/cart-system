@@ -6,7 +6,7 @@ import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
-import { ProductModalModule } from '../utils/modals/product-modal/product-modal.module';
+import { ProductListItemModule } from '../components/product/product-list-item/product-list-item.module';
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import { ProductModalModule } from '../utils/modals/product-modal/product-modal.
     FormsModule,
     ExploreContainerComponentModule,
     Tab1PageRoutingModule,
-    ProductModalModule
+    ProductListItemModule
   ],
   declarations: [Tab1Page]
 })

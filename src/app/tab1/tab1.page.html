@@ -8,6 +8,6 @@
 
 <ion-content [fullscreen]="true">
   <ng-template ngFor [ngForOf]="products" let-product>
-    <app-product-modal [product]="product"></app-product-modal>
+    <product-list-item [product]="product"></product-list-item>
   </ng-template>
 </ion-content>
