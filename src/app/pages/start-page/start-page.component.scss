@@ -1,0 +1,27 @@
+.scroll-container {
+  // width: 350px;
+  // height: 200px;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  margin: 1px;
+}
+
+.scroll-page-1 {
+	background: #f0de7a;
+}
+
+.scroll-page-2 {
+	background: #afe69a;
+}
+
+.scroll-page-3 {
+	background: #b8b7cd;
+}
