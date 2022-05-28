@@ -1,17 +1,14 @@
-// .product-list-item:hover {
-//   background-color: rgb(0, 0, 0);
-//   animation-duration: 1.5s;
-//   color: #f9fdff;
-
-//   .product-tittle {
-//     color: #f9fdff;
-//   }
-// }
-
 .product-list-item{
-  // display: flex;
+  display: flex;
+  justify-content: space-between;
 }
 
-.sellect-product-button{
-  // height: 100%;
+.product-qty{
+  height: 100%;
+  width: 100px;
+  font-size: 40px;
+}
+
+.product-case{
+  padding: 7px;
 }

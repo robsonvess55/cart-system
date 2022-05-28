@@ -7,8 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ProductListItemComponent implements OnInit {
   @Input() product: any;
+
   constructor() { }
 
   ngOnInit() {}
 
+  selectProduct(){
+    this.product.qty += 1;
+  }
 }

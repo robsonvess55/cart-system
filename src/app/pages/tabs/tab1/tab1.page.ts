@@ -21,6 +21,10 @@ export class Tab1Page {
     this.productService.getMenu().subscribe(
       (res) => {
         this.products = res;
+        this.products = this.products.map((p) =>{
+          p.qty = 0;
+          return p;
+        });
       },
       (err) => {
         alert(err)
